@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIWithNetFramworkTempla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIWithNetFramworkTemplate.Tests", "WebAPIWithNetFramworkTemplate.Tests\WebAPIWithNetFramworkTemplate.Tests.csproj", "{A8B87E32-BB83-47E2-8DF8-0E725EA9347E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{8BEAC329-2304-45F9-8E24-4C14EEE403CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A8B87E32-BB83-47E2-8DF8-0E725EA9347E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8B87E32-BB83-47E2-8DF8-0E725EA9347E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8B87E32-BB83-47E2-8DF8-0E725EA9347E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BEAC329-2304-45F9-8E24-4C14EEE403CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BEAC329-2304-45F9-8E24-4C14EEE403CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BEAC329-2304-45F9-8E24-4C14EEE403CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BEAC329-2304-45F9-8E24-4C14EEE403CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

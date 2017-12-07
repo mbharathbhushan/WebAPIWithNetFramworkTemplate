@@ -4,15 +4,19 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using DataAccessLayer;
 
 namespace WebAPIWithNetFramworkTemplate.Controllers
 {
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        public IEnumerable<Employee> Get()
         {
-            return new string[] { "value1", "value2" };
+            EmployeeDBEntities employeeDBEntities = new EmployeeDBEntities();
+
+            return employeeDBEntities.Employees.Where(x => x.Id < 400).ToList();
+            
         }
 
         // GET api/values/5
