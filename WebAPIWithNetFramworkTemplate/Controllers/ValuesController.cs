@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Collections.Generic;
 using System.Web.Http;
-using DataAccessLayer;
 
 namespace WebAPIWithNetFramworkTemplate.Controllers
 {
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<Employee> Get()
+        public IEnumerable<string> Get()
         {
-            EmployeeDBEntities employeeDBEntities = new EmployeeDBEntities();
-
-            return employeeDBEntities.Employees.Where(x => x.Id < 400).ToList();
-            
+            return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5

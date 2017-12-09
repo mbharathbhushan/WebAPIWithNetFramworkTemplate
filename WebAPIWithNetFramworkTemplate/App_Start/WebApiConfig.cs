@@ -20,8 +20,9 @@ namespace WebAPIWithNetFramworkTemplate
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            var appXmlType = config.Formatters.XmlFormatter.SupportedMediaTypes.FirstOrDefault(t => t.MediaType == "application/xml");
-            config.Formatters.Remove(config.Formatters.JsonFormatter);
+            ////var xmlFormatter = config.Formatters.XmlFormatter;
+            ////config.Formatters.Clear();
+            ////config.Formatters.Add(xmlFormatter);
         }
     }
 }
